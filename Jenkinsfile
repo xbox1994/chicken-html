@@ -8,7 +8,7 @@ node{
     }
 
     stage('build'){
-        sh "echo 'build done'"
+        sh "docker build . -t xbox1994/chicken-html"
     }
 
     stage('deploy'){
