@@ -8,7 +8,7 @@ node{
     }
 
     stage('build'){
-        sh "docker build . -t xbox1994/chicken-html"
+        sh "./build.sh"
     }
 
     stage('deploy'){
